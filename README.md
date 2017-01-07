@@ -22,13 +22,13 @@ If you want to have the system send email alerts, you will need PHPMailer from h
 
 What you'll need to configure:
 * globals.php
-..* secret - shared secret that you need to set in your Android and iOS code as well
-..* mailinglist - where you want the alert emails to go to
-..* home_lat, home_lon - lat/lon of your location
-..* home_boundary - radius (in miles) of your geofence
-..* num_hours - number of hours is considered late for device check-in
+  * secret - shared secret that you need to set in your Android and iOS code as well
+  * mailinglist - where you want the alert emails to go to
+  * home_lat, home_lon - lat/lon of your location
+  * home_boundary - radius (in miles) of your geofence
+  * num_hours - number of hours is considered late for device check-in
 * utils.php
-..* sendmail - I've used Yahoo's smtp server but you can configure it however you want. If using Yahoo's smtp you'll need to set up with a valid account. 
+  * sendmail - I've used Yahoo's smtp server but you can configure it however you want  If using Yahoo's smtp you'll need to set up with a valid account  
 * mysql.php - please configure the mysql login params
 
 ## iOS
@@ -37,8 +37,8 @@ iOS code was built on XCode 8.2.1 on MacOS 10.12.2
 
 What you'll need to configure:
 * ViewController.m 
-..* bigBrotherPing - configure host to point to hostname of the LAMP code
-..* genHash - configure key (make sure it is the same secret as the one in globals.php)
+  * bigBrotherPing - configure host to point to hostname of the LAMP code
+  * genHash - configure key (make sure it is the same secret as the one in globals php)
 
 You'll need to add your signing key in order to deploy to real devices.
 
@@ -48,5 +48,5 @@ Android code was built on Android Studio 2.3.3 on MacOS 10.12.2
 
 What you'll need to configure:
 * BigBrotherService.java
-..* hostname - configure to hostname of LAMP code
-..* genHash - configure secret (make sure it is the same secret as the one in globals.php)
+  * hostname - configure to hostname of LAMP code
+  * genHash - configure secret (make sure it is the same secret as the one in globals php)
