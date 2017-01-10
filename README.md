@@ -31,6 +31,10 @@ What you'll need to configure:
   * sendmail - I've used Yahoo's smtp server but you can configure it however you want  If using Yahoo's smtp you'll need to set up with a valid account  
 * mysql.php - please configure the mysql login params
 
+The following are test scripts:
+* mailtest.php - you can use this php script to test your mail config. Configure it and run "php mailtest.php".
+* test.php - this is to test track.php both locally and remotely. Configure it and run "php test.php".
+
 ## iOS
 
 iOS code was built on XCode 8.2.1 on MacOS 10.12.2
